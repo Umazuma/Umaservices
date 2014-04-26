@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="	../css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+	body{
+		background-color:#eee;	
+	}
+	.container{
+		background-color:#fff;	
+	}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row"><img src="img/logo_umazuma.png" style="width:20%" class="col-xs-offset-1" /></div>
+    <div class="row col-xs-9 col-xs-offset-0">
+        <h1 class="page-header" >Documentation de Umaservices2</h1>
+        <h2>Présentation</h2>
+        Umaservices2 est un 
+        framework de développement réalisé par Umazuma. <br>
+        Il est basé sur des bibliothèques (ou framework) existantes et largement partagées.
+        <p>Ces bibliothèques sont :</p>
+        <ul>
+            <li><a href="http://silex.sensiolabs.org" target="_blank">Silex</a> (Symfony) pour l'applicatif serveur</li>
+            <li><a href="http://jquery.com" target="_blank">JQuery</a> et <a href="http://www.jsviews.com/" target="_blank">JSviews</a> pour l'applicatif client</li>
+            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> et <a href="http://html5boilerplate.com/" target="_blank">HTML5Boilerplate</a> pour la présentation</li>
+            <li><a href="http://modernizr.com/" target="_blank">Modernizr</a> et <a href="http://afarkas.github.io/webshim/demos/" target="_blank">Webshims</a> pour la compatibilité internavigateur</li>
+        </ul>
+        <p>&nbsp;</p>
+        <h2>Objectifs</h2>
+        <p>Umaservices2 a pour objectif de proposer une gestion client / serveur complètement réorientée vers la réduction des échanges tant en quantité qu'en format pour permettre un allègement des charges de serveur et une gestion modulable coté client.</p>
+        <p>Les principes de base sont donc : </p>
+        <ul>
+            <li>Le navigteur demande un service (un menu, une page de détail, un formulaire, etc)</li>
+            <li>Un script intercepte cette demande en local (JQuery) et appelle une combinaison de template et de données</li>
+            <li>Le serveur (ou le serveur CDN) délivre des templates Javascript exploitable par JSViews</li>
+            <li>Le serveur délivre des données au format JSON</li>
+            <li>L'ensemble template + données JSON est traité localement par le navigateur (JQuery)</li>
+        </ul>
+        <p>&nbsp;</p>
+        <pre>
+├── css
+├── documentation
+├── img
+├── js
+├── vendor
+├── web
+├── index.php
+├── .htaccess
+├── 404.html
+├── index.html
+├── favicon.ico
+├── browserconfig.xml
+├── crossdomain.xml</pre>
+        <ul>
+            <li><a href="principes.html">Principes</a></li>
+        </ul>
+    </div>
+    <div class="row col-xs-3 col-xs-offset-0">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Navigation</h3>
+            </div>
+            <div class="panel-body"> 
+            	<ul>
+                <li><a href="">menu1</a></li>
+                <li><a href="">menu1</a></li>
+                <li><a href="">menu1</a></li>
+                <li><a href="">menu1</a></li>
+                <li><a href="">menu1</a></li>
+                <li><a href="">menu1</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
